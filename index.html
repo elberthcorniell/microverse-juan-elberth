@@ -5,30 +5,67 @@
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
+  <style>
+    .section{
+      width: 100%;
+      padding: 30px;
+      text-align: center;
+    }
+    nav{
+      white-space: nowrap;
+      color: 'white';
+      background-color: cadetblue;
+      width: 100vw;
+      overflow: hidden;
+    }
+    header{
+      width: 100vw;
+      padding: 0px;
+      position: fixed;
+      top: 0px;
+      display: block;
+    }
+    nav a {
+      float: right;
+      color: white;
+      margin: 20px;
+    }
+    img{
+      display: inline-flex;
+    }
+    @media (max-width: 900px){
+      iframe{
+        display: hidden;
+      }
+    }
+    body{
+      overflow-x: hidden;
+    }
+  </style>
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script  src="js/index.js"></script>
 
     <header id="header">
-      <img id="header-img" width="100" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/corporate-company-logo-design-template-2402e0689677112e3b2b6e0f399d7dc3_screen.jpg?ts=1561532453"/>
-      <nav id="nav-bar">
-        <li>
+     <nav id="nav-bar">
           <a href="#video" class="nav-link">Home</a>
-        </li>
-        <li>
           <a href="#info" class="nav-link">Info</a>
-        </li>
-        <li>
           <a href="#contact" class="nav-link">Contact</a>
-        </li>
       </nav>
+      <img id="header-img" width="100" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/corporate-company-logo-design-template-2402e0689677112e3b2b6e0f399d7dc3_screen.jpg?ts=1561532453"/>
+     
     </header>
-
+    <div class="section" style="margin-top: 60px">
     <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/50s13fKKhGo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div id="info"></div>
-    <div id="contact">
+  </div>
+    <div class="section" id="info">
+      <h1>More Info</h1><br/>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat adipisci voluptatum dolorem, doloremque ea error at, id architecto sit tempore mollitia sequi ratione voluptate ab maiores, excepturi amet. Odit, porro.</p>
+    </div>
+    <div class="section"  id="contact">
+      <h1>Contact</h1>
       <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input id="email" type="email" placeholder="Email address">
+        <input id="email" name="email" type="email" placeholder="Email address">
         <input id="submit" type="submit">
       </form>
     </div>
